@@ -1,0 +1,84 @@
+/* 全体のリセットと背景設定 */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: linear-gradient(135deg, #e0f7fa 0%, #80deea 100%); 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+/* タイマーの外枠 */
+.timer-container {
+    background-color: rgba(255, 255, 255, 0.9); 
+    padding: 40px 60px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); 
+    text-align: center;
+    border: 3px solid #ffffff;
+}
+
+/* 時間の表示 */
+#timer-display {
+    font-size: 5rem;
+    font-weight: bold;
+    color: #007791; 
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+}
+
+/* ボタン */
+.timer-buttons, .mode-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px; 
+    margin-bottom: 20px;
+}
+
+/* ボタン共通のスタイル */
+button {
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.2s ease; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+/* マウスを乗せたときのエフェクト */
+button:hover {
+    transform: translateY(-2px); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+/* クリックしたときのエフェクト */
+button:active {
+    transform: translateY(1px); /* カチッと沈む */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+/* 各ボタンの色設定 */
+#start-btn {
+    background-color: #ff8a65; 
+    color: white;
+}
+
+#pause-btn {
+    background-color: #ffd54f; 
+    color: #424242;
+}
+
+#reset-btn {
+    background-color: #90a4ae; 
+    color: white;
+}
+
+/* 時間切り替えボタンのスタイル */
+.mode-buttons button {
+    background-color: #4db6ac; 
+    color: white;
+    font-size: 0.9rem;
+    padding: 8px 16px;
+}
